@@ -6,11 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 import android.widget.ExpandableListView
+import android.widget.ImageView
 import android.widget.TextView
 import kotlinx.android.synthetic.main.heroactivity.*
 
 class ExpandableListAdapter(val context: Context, val expListView : ExpandableListView,
-                            val header: MutableList<String>, val body: MutableList<MutableList<String>>) : BaseExpandableListAdapter()
+                            val header: MutableList<String>, val headerImgs : MutableList<Int>, val body: MutableList<MutableList<String>>) : BaseExpandableListAdapter()
 {
     override fun getGroup(groupPosition: Int): String {
         return header[groupPosition]
@@ -31,8 +32,10 @@ class ExpandableListAdapter(val context: Context, val expListView : ExpandableLi
             val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             cView = inflater.inflate(R.layout.expandable_list_group, null)
         }
-        val title = cView?.findViewById<TextView>(R.id.textView)
+        val title = cView?.findViewById<TextView>(R.id.text_view)
         title?.text = getGroup(groupPosition)
+        val img = cView?.findViewById<ImageView>(R.id.image_view)
+        img?.setImageResource(headerImgs[groupPosition])
 
         title?.setOnClickListener{
             if(expListView.isGroupExpanded(groupPosition))

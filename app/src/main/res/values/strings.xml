@@ -3,4 +3,45 @@
     <color name="OWWhite">#FFFFFFFF</color>
     <color name="OWOrange">#fa9c1d</color>
     <color name="OWGrey">#4a4c4e</color>
+
+    <string name="Bap_Nationality"><b>Nationality:</b> Haitian</string>
+    <string name="Bap_Health"><b>Health:</b> 200</string>
+    <string name="Bap_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="Bap_Gun">Biotic Launcher</string>
+    <string name="Bap_Gun_Detail"><b>Three-round burst gun</b></string>
+    <string name="Bap_Gun_Type"><b>Weapon Type:</b> Hitscan</string>
+    <string name="Bap_Gun_Damage"><b>Damage:</b> 24</string>
+    <string name="Bap_Gun_Ammo"><b>Clip Size:</b> 45</string>
+    <string name="Bap_Gun_ReloadTime"><b>Reload Time:</b> 1.5 seconds</string>
+    <string name="Bap_Gun_ROF"><b>Rate of Fire:</b> 1 burst per 0.58 seconds</string>
+    <string name="Bap_Gun_Falloff"><b>Falloff:</b> Begins at 25 metres, capped to half damage from 45 metres </string>
+    <string name="Bap_Gun_CanHeadshot"><b>Can Headshot:</b> Yes</string>
+
+    <string name="Bap_Gun2">Biotic Launcher(Alt)</string>
+    <string name="Bap_Gun2_Detail"><b>Arcing grenade that explodes on impact and heals allies in a radius</b></string>
+    <string name="Bap_Gun2_Type"><b>Weapon Type:</b> Projectile</string>
+    <string name="Bap_Gun2_Speed"><b>Projectile Speed:</b> Projectile</string>
+    <string name="Bap_Gun2_Damage"><b>Healing:</b> 60</string>
+    <string name="Bap_Gun2_Ammo"><b>Clip Size:</b> 10</string>
+    <string name="Bap_Gun2_ReloadTime"><b>Reload Time:</b> 1.5 seconds</string>
+    <string name="Bap_Gun2_ROF"><b>Rate of Fire:</b> 1 grenade per 0.9 seconds</string>
+    <string name="Bap_Gun2_Radius"><b>Explosion Radius:</b> 3 metres </string>
+    <string name="Bap_Gun2_CanHeadshot"><b>Can Headshot:</b> No</string>
+
+    <string name="Bap_Ability1">Regenerative Burst</string>
+    <string name="Bap_Ability1_Detail"><b>Baptiste gives himself and surrounding allies passive healing for a time</b></string>
+    <string name="Bap_Ability1_CastTime"><b>Cast Time:</b> 0.3 seconds(but effect applies instantly)</string>
+    <string name="Bap_Ability1_Healing"><b>Healing:</b> 15/s, doubled for the user</string>
+    <string name="Bap_Ability1_Duration"><b>Duration:</b> 5 seconds</string>
+    <string name="Bap_Ability1_AOE"><b>Radius:</b> 10 metres</string>
+    <string name="Bap_Ability1_Cooldown"><b>Cooldown:</b> 13 seconds</string>
+
+    <string name="Bap_Ability2">Immortality Field</string>
+
+    <string name="Bap_Ultimate">Amplification Matrix</string>
+
+    <string name="Bap_Passive">Exo-Boots</string>
+
+
 </resources>

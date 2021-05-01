@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_tanks"
+        android:icon="@drawable/nav_tank"
+        android:title="Tank"/>
+
+    <item
+        android:id="@+id/ic_damage"
+        android:icon="@drawable/nav_damage"
+        android:title="Damage"/>
+
+    <item
+        android:id="@+id/ic_supports"
+        android:icon="@drawable/nav_support"
+        android:title="Support"/>
+
+</menu>

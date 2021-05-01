@@ -1,12 +1,9 @@
 <resources>
-    <string name="app_name">TestApp</string>
-    <color name="OWWhite">#FFFFFFFF</color>
-    <color name="OWOrange">#fa9c1d</color>
-    <color name="OWGrey">#4a4c4e</color>
+    <string name="app_name">Vamonos!</string>
 
     <string name="Bap_Nationality"><b>Nationality:</b> Haitian</string>
     <string name="Bap_Health"><b>Health:</b> 200</string>
-    <string name="Bap_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+    <string name="Bap_MoveSpeed"><b> Movespeed</b> 5.5 Metres/s</string>
 
     <string name="Bap_Gun">Biotic Launcher</string>
     <string name="Bap_Gun_Detail"><b>Three-round burst gun</b></string>
@@ -20,8 +17,8 @@
 
     <string name="Bap_Gun2">Biotic Launcher(Alt)</string>
     <string name="Bap_Gun2_Detail"><b>Arcing grenade that explodes on impact and heals allies in a radius</b></string>
-    <string name="Bap_Gun2_Type"><b>Weapon Type:</b> Projectile</string>
-    <string name="Bap_Gun2_Speed"><b>Projectile Speed:</b> Projectile</string>
+    <string name="Bap_Gun2_Type"><b>Weapon Type:</b> Arcing Projectile</string>
+    <string name="Bap_Gun2_Speed"><b>Projectile Speed:</b> 60 metres/second</string>
     <string name="Bap_Gun2_Damage"><b>Healing:</b> 60</string>
     <string name="Bap_Gun2_Ammo"><b>Clip Size:</b> 10</string>
     <string name="Bap_Gun2_ReloadTime"><b>Reload Time:</b> 1.5 seconds</string>
@@ -38,10 +35,278 @@
     <string name="Bap_Ability1_Cooldown"><b>Cooldown:</b> 13 seconds</string>
 
     <string name="Bap_Ability2">Immortality Field</string>
+    <string name="Bap_Ability2_Detail"><b>Baptiste throws a device which creates an area around it where his teammates cannot go under 20% of their current maximum health</b></string>
+    <string name="Bap_Ability2_Type"><b>Weapon Type:</b> Arcing Projectile, which turns into a buildable</string>
+    <string name="Bap_Ability2_Speed"><b>Projectile Speed:</b> 60 metres/second</string>
+    <string name="Bap_Ability2_Health"><b>Health:</b> 150</string>
+    <string name="Bap_Ability2_Duration"><b>Duration:</b> 5 seconds, or until the device is destroyed</string>
+    <string name="Bap_Ability2_Cooldown"><b>Cooldown:</b> 25 seconds</string>
 
     <string name="Bap_Ultimate">Amplification Matrix</string>
+    <string name="Bap_Ultimate_Detail">Creates a matrix that doubles the damage and healing effects of friendly projectiles and hitscan shots that pass through it</string>
+    <string name="Bap_Ultimate_Cost">Ultimate Charge Required: 2310 points</string>
+    <string name="Bap_Ultimate_Duration">Duration: 10 seconds</string>
+    <string name="Bap_Ultimate_Range">Can be placed within 35 metres of baptiste</string>
+    <string name="Bap_Ultimate_AOE">Area of Effect: The Matrix is 9x5, and extends 1 metre under where it is placed</string>
 
     <string name="Bap_Passive">Exo-Boots</string>
+    <string name="Bap_Passive_Detail">By crouching, baptiste can jump higher based on duration crouched</string>
+    <string name="Bap_Passive_Height">Height: When fully charged, Baptiste jumps 9.1 metres upwards.</string>
+    <string name="Bap_Passive_ChargeTime">Charge time: fully charges in 0.7 seconds</string>
 
+    <string name="Ana_Nationality"><b>Nationality:</b> Egyptian</string>
+    <string name="Ana_Health"><b>Health:</b> 200</string>
+    <string name="Ana_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="Ana_Gun">Biotic Rifle</string>
+    <string name="Ana_Gun_Detail"><b>Damage-over-time sniper that heals allies and damages enemies. Can scope in.</b></string>
+    <string name="Ana_Gun_Type"><b>Weapon Type:</b> Projectile, Hitscan when scoped</string>
+    <string name="Ana_Gun_Speed"><b>Projectile Speed:</b> 125 metres per second</string>
+    <string name="Ana_Gun_Damage"><b>Damage:</b> 70</string>
+    <string name="Ana_Gun_Healing"><b>Healing:</b> 70</string>
+    <string name="Ana_Gun_Ammo"><b>Clip Size:</b> 12</string>
+    <string name="Ana_Gun_ReloadTime"><b>Reload Time:</b> 1.5 seconds</string>
+    <string name="Ana_Gun_ROF"><b>Rate of Fire:</b> 1 shot per 0.8 seconds</string>
+    <string name="Ana_Gun_Falloff"><b>Falloff:</b> None</string>
+    <string name="Ana_Gun_CanHeadshot"><b>Can Headshot:</b> No</string>
+
+    <string name="Ana_Ability1">Sleep Dart</string>
+    <string name="Ana_Ability1_Detail"><b>A dart that sleeps enemies hit. Enemies are woken up by any damage after 0.5 seconds</b></string>
+    <string name="Ana_Ability1_Type"><b>Weapon Type:</b> Projectile</string>
+    <string name="Ana_Ability1_Speed"><b>Projectile Speed:</b> 60 metres per second</string>
+    <string name="Ana_Ability1_Damage"><b>Damage:</b> 70</string>
+    <string name="Ana_Ability1_CastTime"><b>Cast Time:</b> 0.3 seconds</string>
+    <string name="Ana_Ability1_Healing"><b>Healing:</b> 15/s, doubled for the user</string>
+    <string name="Ana_Ability1_Duration"><b>Duration:</b> minimum 1.5 seconds, maximum 5 seconds</string>
+    <string name="Ana_Ability1_AOE"><b>Radius:</b> 10 metres</string>
+    <string name="Ana_Ability1_Cooldown"><b>Cooldown:</b> 12 seconds</string>
+
+    <string name="Ana_Ability2">Biotic Grenade</string>
+    <string name="Ana_Ability2_Detail"><b>A grenade which explodes on impact, healing allies and damaging enemies</b></string>
+    <string name="Ana_Ability2_Type"><b>Weapon Type:</b> Arcing Projectile</string>
+    <string name="Ana_Ability2_Speed"><b>Projectile Speed:</b> 30 metres per second</string>
+    <string name="Ana_Ability2_Damage"><b>Damage:</b> 60, enemies cannot receive healing for the duration</string>
+    <string name="Ana_Ability2_Healing"><b>Damage:</b> 100, allies receive 50% more healing for the duration</string>
+    <string name="Ana_Ability2_Duration"><b>Duration:</b> 4 seconds</string>
+    <string name="Ana_Ability2_AOE"><b>Radius:</b> 4 metres</string>
+    <string name="Ana_Ability2_Cooldown"><b>Cooldown:</b> 10 seconds</string>
+
+    <string name="Ana_Ultimate">Nano Boost</string>
+    <string name="Ana_Ultimate_Detail">Ana amplifies an ally, making them do 50% more damage and take 50% less damage</string>
+    <string name="Ana_Ultimate_Cost">Ultimate Charge Required: 2100 points</string>
+    <string name="Ana_Ultimate_Healing">Healing: Instantly heals the target for 250 health</string>
+    <string name="Ana_Ultimate_Range">Range: Targets within 40 metres of Ana can be nanoboosted</string>
+    <string name="Ana_Ultimate_CastTime">Cast time: 0.15 seconds</string>
+    <string name="Ana_Ultimate_Duration">Duration: 8 seconds</string>
+
+    <string name="Brig_Nationality"><b>Nationality:</b> Swedish</string>
+    <string name="Brig_Health"><b>Health:</b> 150</string>
+    <string name="Brig_Armour"><b>Armour:</b> 50</string>
+    <string name="Brig_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="Brig_Flail">Rocket Flail</string>
+    <string name="Brig_Flail_Detail"><b>Damage-over-time sniper that heals allies and damages enemies. Can scope in.</b></string>
+    <string name="Brig_Flail_Type">Weapon Type: Melee</string>
+    <string name="Brig_Flail_Damage">Damage: 35</string>
+    <string name="Brig_Flail_Range">Range: 6 metres</string>
+
+    <string name="Brig_RepairPack">Repair Pack</string>
+    <string name="Brig_RepairPack_Detail"><b>Targeted ally in range is healed over time</b></string>
+    <string name="Brig_RepairPack_Healing">Healing: 110 over 2 seconds for each pack</string>
+    <string name="Brig_RepairPack_Speed">Travel Time: 35 metres/s</string>
+    <string name="Brig_RepairPack_Charges">Charges: 3 charges max</string>
+    <string name="Brig_RepairPack_Cooldown">Cooldown: 6 seconds per charge</string>
+
+    <string name="Brig_WhipShot">Whip Shot</string>
+    <string name="Brig_WhipShot_Detail">Brigitte fires the head of her rocket flail, knocking back targets it hits</string>
+    <string name="Brig_WhipShot_Type">Weapon Type: Projectile</string>
+    <string name="Brig_WhipShot_Speed">Projectile Speed: 80 metres/s</string>
+    <string name="Brig_WhipShot_Damage">Damage: 70</string>
+    <string name="Brig_WhipShot_Range">Range: 20 metres</string>
+    <string name="Brig_WhipShot_Knockback">Knockback: 5–10 metres.</string>
+    <string name="Brig_WhipShot_Cooldown">Cooldown: 4 seconds</string>
+
+    <string name="Brig_BarrierShield">Barrier Shield</string>
+    <string name="Brig_BarrierShield_Detail">Brigitte deploys a front-facing barrier that can block incoming damage</string>
+    <string name="Brig_BarrierShield_Health">Health: 250</string>
+    <string name="Brig_BarrierShield_Healing">Healing: regenerates 85 health per second after not being used for 2 seconds</string>
+    <string name="Brig_BarrierShield_MovePenalty">Movespeed: Reduced by 30% while in use.</string>
+    <string name="Brig_BarrierShield_Cooldown">Cooldown: 5 seconds only after shield health reaches 0</string>
+
+    <string name="Brig_ShieldBash">Shield Bash</string>
+    <string name="Brig_ShieldBash_Detail">While her shield is up, brigitte dashes forward and stuns the first target she hits, if any</string>
+    <string name="Brig_ShieldBash_Damage">Damage: 5</string>
+    <string name="Brig_ShieldBash_Range">Range: 6.85 metres</string>
+    <string name="Brig_ShieldBash_Duration">Stun Duration: 0.75 seconds</string>
+    <string name="Brig_ShieldBash_Cooldown">Cooldown: 7 seconds</string>
+
+    <string name="Brig_Ultimate">Rally</string>
+    <string name="Brig_Ultimate_detail">Brigitte provides herself and nearby allies with bonus temporary armour</string>
+    <string name="Brig_Ultimate_cost">Ultimate Charge Required: 2800 points</string>
+    <string name="Brig_Ultimate_healing">Healing: 15 armour per 0.5 seconds, up to a max of 100 bonus armour</string>
+    <string name="Brig_Ultimate_movespeed">Movespeed: Brigitte gains +30% movespeed during Rally</string>
+    <string name="Brig_Ultimate_AOE">Radius: 8.5 metres</string>
+    <string name="Brig_Ultimate_duration">Duration: 10 seconds, bonus armour remains for 30 seconds</string>
+
+    <string name="Brig_Passive">Inspire</string>
+    <string name="Brig_Passive_detail">If brigitte hits an enemy with rocket flail or whip shot, nearby allies gain a passive heal for the duration. Hitting enemies again resets the duration</string>
+    <string name="Brig_Passive_healing">Healing: 15 per second</string>
+    <string name="Brig_Passive_AOE">Radius: 20 metres</string>
+    <string name="Brig_Passive_duration">Duration: 6 seconds</string>
+    <string name="Brig_Passive_cooldown">Cooldown: 1 second</string>
+
+    <string name="lucio_Nationality"><b>Nationality:</b> Brazilian</string>
+    <string name="lucio_Health"><b>Health:</b> 200</string>
+    <string name="lucio_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="lucio_Gun">Sonic Amplifier</string>
+    <string name="lucio_Gun_Detail"><b>4 round burst gun</b></string>
+    <string name="lucio_Gun_Type"><b>Weapon Type:</b> Projectile</string>
+    <string name="lucio_Gun_Speed"><b>Projectile Speed:</b> 50 metres per second</string>
+    <string name="lucio_Gun_Damage"><b>Damage:</b> 20</string>
+    <string name="lucio_Gun_Ammo"><b>Clip Size:</b> 20</string>
+    <string name="lucio_Gun_ReloadTime"><b>Reload Time:</b> 1.5 seconds</string>
+    <string name="lucio_Gun_ROF"><b>Rate of Fire:</b> 1 burst of 4 shots per 0.935 seconds</string>
+    <string name="lucio_Gun_CanHeadshot"><b>Can Headshot:</b> Yes</string>
+
+    <string name="lucio_Soundwave">Soundwave</string>
+    <string name="lucio_Soundwave_Detail"><b>A blast of sound knocks all enemies in its range backwards</b></string>
+    <string name="lucio_Soundwave_Damage">Damage: 25</string>
+    <string name="lucio_Soundwave_Range">Range: 8 metres</string>
+    <string name="lucio_Soundwave_Cooldown">Cooldown: 4 seconds</string>
+
+    <string name="lucio_Crossfade">Crossfade</string>
+    <string name="lucio_Crossfade_Detail"><b>Lucio continuously amplifies himself and nearby allies with either a healing or speed bonus</b></string>
+    <string name="lucio_Crossfade_Healing">Healing: Allies: 16/s, Self: 12.3/s</string>
+    <string name="lucio_Crossfade_movespeed">Movespeed: +25% speed</string>
+    <string name="lucio_Crossfade_AOE">Radius: 12 metres</string>
+    <string name="lucio_Crossfade_Cooldown">Cooldown: 0.8 second delay between switching songs</string>
+
+    <string name="lucio_AmpitUp">Amp it Up!</string>
+    <string name="lucio_AmpitUp_Detail"><b>Lucio increases the volume on his speakers, boosting the song bonus</b></string>
+    <string name="lucio_AmpitUp_Healing">Healing: Allies: 52/s, Self: 40/s</string>
+    <string name="lucio_AmpitUp_movespeed">Movespeed: +60% speed</string>
+    <string name="lucio_AmpitUp_AOE">Radius: 12 metres</string>
+    <string name="lucio_AmpitUp_Duration">Duration: 3 seconds</string>
+    <string name="lucio_AmpitUp_Cooldown">Cooldown: 12 seconds</string>
+
+    <string name="lucio_Ultimate">Sound Barrier</string>
+    <string name="lucio_Ultimate_Detail"><b>Lucio drops the beat, providing him and allies in line of sight with a massive temporary shield boost</b></string>
+    <string name="lucio_Ultimate_Cost">Ultimate Charge Required 2940 points</string>
+    <string name="lucio_Ultimate_Healing">Healing: Immediately gives 750 Temporary Shields, which decay at 125/s</string>
+    <string name="lucio_Ultimate_casttime">Cast Time: 0.72 seconds. Can be reduced by hopping onto higher ground during the cast</string>
+    <string name="lucio_Ultimate_Range">Range: Affects allies within 30 metres up to 0.5 seconds after the cast completes</string>
+    <string name="lucio_Ultimate_Duration">Duration: 7 seconds</string>
+
+    <string name="lucio_passive">Wallride</string>
+    <string name="lucio_passive_detail">Jump onto a wall to ride along it</string>
+    <string name="lucio_passive_movespeed">Movespeed: Gives a +30% speed boost while wallriding and +2.5 metres in the next second after leaping off of a wall</string>
+
+    <string name="mercy_Nationality"><b>Nationality:</b> Swiss</string>
+    <string name="mercy_Health"><b>Health:</b> 200</string>
+    <string name="mercy_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="mercy_staff">Caduceus Staff</string>
+    <string name="mercy_staff_Detail"><b>Beam that connects to an ally. Primary fire to restore health, alternate fire to increase damage</b></string>
+    <string name="mercy_staff_Healing"><b>Healing:</b> 55 health/s</string>
+    <string name="mercy_staff_Damage"><b>Damage:</b> +30% bonus damage for targeted ally. Mercy gains ultimate charge equal to boosted damage dealt to enemies</string>
+    <string name="mercy_staff_Range"><b>Range:</b> Up to 15 metres</string>
+
+    <string name="mercy_gun">Caduceus Blaster</string>
+    <string name="mercy_gun_detail">Secondary weapon</string>
+    <string name="mercy_gun_type">Weapon Type: Projectile</string>
+    <string name="mercy_gun_speed">Projectile Speed: 50 metres/s</string>
+    <string name="mercy_gun_ROF">Rate of fire: 5 rounds per second</string>
+    <string name="mercy_gun_ammo">Clip size: 20</string>
+    <string name="mercy_gun_reload">Reload Time: 1.4 seconds</string>
+    <string name="mercy_gun_canHeadshot">Can Headshot: Yes</string>
+
+    <string name="mercy_GA">Guardian Angel</string>
+    <string name="mercy_GA_detail">Mercy flies toward a targeted ally or soul</string>
+    <string name="mercy_GA_movespeed">Movespeed: 17 metres/second</string>
+    <string name="mercy_GA_range">Range: Up to 30 metres</string>
+    <string name="mercy_GA_Cooldown">Cooldown: 1.5 seconds</string>
+    <string name="mercy_GA_Targeting">Targeting: In settings, Mercy can choose to prefer her current Caduceus staff target</string>
+
+    <string name="mercy_resurrect">Resurrect</string>
+    <string name="mercy_resurrect_detail">Mercy revives a dead ally and restores them to full health</string>
+    <string name="mercy_resurrect_movespeed">Movespeed: -75% movement penalty while casting</string>
+    <string name="mercy_resurrect_range">Range: Can revive allies within 5 metres. Going beyond 7 metres from the ally while casting cancels the resurrect</string>
+    <string name="mercy_resurrect_cast_time">Cast Time: 1.75 seconds</string>
+    <string name="mercy_resurrect_cooldown">Cooldown: 30 seconds</string>
+
+    <string name="mercy_Ultimate">Valkyrie</string>
+    <string name="mercy_Ultimate_detail">Mercy gains the ability to fly, and her abilities are enhanced</string>
+    <string name="mercy_Ultimate_cost">Ultimate Charge Required: 1820 points</string>
+    <string name="mercy_Ultimate_staff">Caduceus Staff: Also affects allies near the beam target. Healing increased to 60/second</string>
+    <string name="mercy_Ultimate_blaster">Caduceus Blaster: Unlimited ammo for the duration, projectile speed doubled to 100metres/second</string>
+    <string name="mercy_Ultimate_regeneration">Regeneration: Not cancelled by damage for the duration.</string>
+    <string name="mercy_Ultimate_duration">Duration: 15 seconds</string>
+
+    <string name="mercy_passive">Regeneration</string>
+    <string name="mercy_passive_detail">After not taking damage for 1 second, mercy regenerates health</string>
+    <string name="mercy_passive_healing">Healing: 20 health/second</string>
+
+    <string name="moira_Nationality"><b>Nationality:</b> Irish</string>
+    <string name="moira_Health"><b>Health:</b> 200</string>
+    <string name="moira_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="moira_gun_heal">Biotic Grasp( Healing)</string>
+    <string name="moira_gun_heal_detail">Moira sprays healing energy to heal allies it passes through</string>
+    <string name="moira_gun_heal_healing">Healing: 70/second, then healing lingers at 17.5 over 2 seconds</string>
+    <string name="moira_gun_heal_range">Range: Healing spray travel 15 metres</string>
+    <string name="moira_gun_heal_ammo">Ammo: 160</string>
+    <string name="moira_gun_heal_ROF">Usage Rate: 12.5/second</string>
+    <string name="moira_gun_heal_reload">Reload Time: regenerates 3.84/second while inactive</string>
+
+    <string name="moira_gun_kill">Biotic Grasp( Damage)</string>
+    <string name="moira_gun_kill_type">Weapon type: Beam</string>
+    <string name="moira_gun_kill_damage">Damage: 50/second</string>
+    <string name="moira_gun_kill_heal">Healing: 20/second (self)</string>
+    <string name="moira_gun_kill_range">Range: 20 metres</string>
+    <string name="moira_gun_kill_regen">Regeneration: Restores 21.875 ammo for Biotic Grasp( Healing)/second while damaging enemies</string>
+
+    <string name="moira_orb">Biotic Orb</string>
+    <string name="moira_orb_detail">Moira fires a bouncing orb, which either damages enemies or heals allies</string>
+    <string name="moira_orb_damage">Damage: 50/second, up to 200 damage total</string>
+    <string name="moira_orb_healing">Healing: 65/second, up to 300 healing total</string>
+    <string name="moira_orb_type">Weapon Type: Projectile</string>
+    <string name="moira_orb_speed">Projectile Speed: 20 metres/second, 5.5 while affecting a target</string>
+    <string name="moira_orb_range">Radius: 4 metres( damage) or 5 metres( healing)</string>
+    <string name="moira_orb_duration">Duration: 7 seconds</string>
+    <string name="moira_orb_cooldown">Cooldown: 10 seconds</string>
+
+    <string name="moira_fade">Fade</string>
+    <string name="moira_fade_detail">Moira becomes invisible and invulnerable for a short time</string>
+    <string name="moira_fade_movespeed">Movespeed: +250% bonus( 19.25 metres/second)</string>
+    <string name="moira_fade_duration">Duration: 0.8 seconds</string>
+    <string name="moira_fade_cooldown">Cooldown: 6 seconds</string>
+
+    <string name="moira_ultimate">Coalescence</string>
+    <string name="moira_ultimate_detail">Long range beam that simultaneously heals allies and damages enemies inside it</string>
+    <string name="moira_ultimate_cost">Ultimate Charge Required: 2380 points</string>
+    <string name="moira_ultimate_damage">Damage: 70/second</string>
+    <string name="moira_ultimate_healing">Healing: 140/second, 50/second to self</string>
+    <string name="moira_ultimate_movespeed">Movespeed: +50 bonus</string>
+    <string name="moira_ultimate_range">Range: up to 30 metres</string>
+    <string name="moira_ultimate_duration">Duration: 8 seconds</string>
+
+    <string name="zen_Nationality"><b>Nationality:</b> Nepali</string>
+    <string name="zen_Health"><b>Health:</b> 50</string>
+    <string name="zen_Shields"><b>Shields:</b> 150</string>
+    <string name="zen_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="zen_gun">Orb of Destruction</string>
+    <string name="zen_gun_detail">projectiles that can be fired individually or charged and released 5 at a time in a volley</string>
+    <string name="zen_gun_damage">Damage: 48 per orb</string>
+    <string name="zen_gun_type">Weapon Type: Projectile</string>
+    <string name="zen_gun_speed">Projectile Speed: 90 metres/second</string>
+    <string name="zen_gun_ROF">Rate of Fire: 2.5 shots per second, or 9 shots per second if firing a volley</string>
+    <string name="zen_gun_volley">Volley: Can charge up to 5 shots in a volley.</string>
+    <string name="zen_gun_ammo">Ammo: 20</string>
+    <string name="zen_gun_reloadspeed">Reload Time: 1.5 seconds</string>
+    <string name="zen_gun_canHeadshot">Can Headshot: Yes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

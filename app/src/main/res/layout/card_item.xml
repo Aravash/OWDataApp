@@ -26,7 +26,8 @@
             android:text="Wrecking Ball"
             android:textColor="@color/OWWhite"
             android:textSize="40sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/koverwatch"/>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

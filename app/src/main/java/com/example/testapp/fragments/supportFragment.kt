@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.testapp.Adapter
 import com.example.testapp.CardItem
 import com.example.testapp.R
+import kotlinx.android.synthetic.main.fragment_support.*
 import kotlinx.android.synthetic.main.fragment_tank.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -20,7 +22,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [supportFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class supportFragment : Fragment() {
+class supportFragment : Fragment(){
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -32,10 +34,6 @@ class supportFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-
-            //recycler_view.adapter = Adapter(List, requireContext())
-            recycler_view.layoutManager = LinearLayoutManager(requireContext())
-            recycler_view.setHasFixedSize(true)
         }
     }
 
@@ -43,6 +41,11 @@ class supportFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        support_recycler.adapter = Adapter(List, requireContext())
+        support_recycler.layoutManager = LinearLayoutManager(this.context)
+        support_recycler.setHasFixedSize(true)
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_support, container, false)
     }

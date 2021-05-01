@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.testapp.Adapter
 import com.example.testapp.CardItem
 import com.example.testapp.R
 import kotlinx.android.synthetic.main.fragment_tank.*
@@ -32,15 +33,16 @@ class tankFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-
-            //recycler_view.adapter = Adapter(List, requireContext())
-            recycler_view.layoutManager = LinearLayoutManager(requireContext())
-            recycler_view.setHasFixedSize(true)
         }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+
+     //   tank_recycler.adapter = Adapter(List,this)
+     //   tank_recycler.layoutManager = LinearLayoutManager(requireContext())
+     //   tank_recycler.setHasFixedSize(true)
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tank, container, false)
 

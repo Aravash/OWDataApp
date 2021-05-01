@@ -12,7 +12,7 @@ import com.example.testapp.Adapter
 import com.example.testapp.CardItem
 import com.example.testapp.HeroActivity
 import com.example.testapp.R
-import kotlinx.android.synthetic.main.fragment_tank.*
+import kotlinx.android.synthetic.main.fragment_damage.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -37,16 +37,16 @@ class damageFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-
-        //recycler_view.adapter = Adapter(List, requireContext())
-        recycler_view.layoutManager = LinearLayoutManager(requireContext())
-        recycler_view.setHasFixedSize(true)
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        damage_recycler.adapter = Adapter(List, this)
+        damage_recycler.layoutManager = LinearLayoutManager(requireContext())
+        damage_recycler.setHasFixedSize(true)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_damage, container, false)
     }

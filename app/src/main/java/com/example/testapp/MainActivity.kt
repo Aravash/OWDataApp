@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val tankFrag = heroDetailFragment()
+        val tankFrag = tankFragment()
         val damageFrag = damageFragment()
         val supportFrag = supportFragment()
 
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         // recycler_view.setHasFixedSize(true)*/
     }
 
-    public fun makeFragmentCurrent(fragment: Fragment) =
+    private fun makeFragmentCurrent(fragment: Fragment) =
             supportFragmentManager.beginTransaction().apply {
 
                 val b = Bundle()
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                 commit()
             }
 
-    public fun makeHeroViewActivity(fragment: Fragment, title: String) =
+    public fun makeHeroViewFragment(fragment: Fragment, title: String) =
             supportFragmentManager.beginTransaction().apply {
                 val b = Bundle()
                 b.putString("message", "D.Va")

@@ -46,7 +46,7 @@ class tankFragment : Fragment(), Adapter.OnItemClickListener {
         tank_recycler.adapter = Adapter(List, this)
         tank_recycler.layoutManager = LinearLayoutManager(requireContext())
         tank_recycler.setHasFixedSize(true)
-
+        println("Inside onCreateView for tank Fragment")
         // Inflate the layout for this fragment
         return inflate
 
@@ -87,6 +87,7 @@ class tankFragment : Fragment(), Adapter.OnItemClickListener {
     }
 
     override fun onItemClick(position: Int) {
+        println("reached onItemClick Content")
         (activity as MainActivity?)?.makeHeroViewFragment(detailFrag, List[position].title)
     }
 }

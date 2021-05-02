@@ -76,7 +76,6 @@
     <string name="Ana_Ability1_Speed"><b>Projectile Speed:</b> 60 metres per second</string>
     <string name="Ana_Ability1_Damage"><b>Damage:</b> 70</string>
     <string name="Ana_Ability1_CastTime"><b>Cast Time:</b> 0.3 seconds</string>
-    <string name="Ana_Ability1_Healing"><b>Healing:</b> 15/s, doubled for the user</string>
     <string name="Ana_Ability1_Duration"><b>Duration:</b> minimum 1.5 seconds, maximum 5 seconds</string>
     <string name="Ana_Ability1_AOE"><b>Radius:</b> 10 metres</string>
     <string name="Ana_Ability1_Cooldown"><b>Cooldown:</b> 12 seconds</string>

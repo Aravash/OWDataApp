@@ -25,7 +25,7 @@ class RoleActivity : AppCompatActivity(), Adapter.OnItemClickListener
     }
 
     override fun onItemClick(position: Int) {
-        Toast.makeText(this, List[position].title + " clicked", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, List[position].title + " clicked", Toast.LENGTH_SHORT).show()
         openHeroActivity(List[position].title)
     }
 

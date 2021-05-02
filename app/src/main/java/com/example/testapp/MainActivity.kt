@@ -28,16 +28,14 @@ class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
 
     private fun generateList(): List<CardItem> {
         val list = ArrayList<CardItem>()
-
         list += CardItem(R.drawable.nav_tank, "Tank")
         list += CardItem(R.drawable.nav_damage, "Damage")
         list += CardItem(R.drawable.nav_support, "Support")
-
         return list
     }
 
     private fun openHeroActivity(name: String) {
-        val intent = Intent(this, HeroActivity()::class.java)
+        val intent = Intent(this, RoleActivity()::class.java)
         intent.putExtra("key", name)
         startActivity(intent)
     }

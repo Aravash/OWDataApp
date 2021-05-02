@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
         recycler_view.setHasFixedSize(true)
     }
 
-    override fun onItemClick(pos: Int) {
+    override fun onItemClick(position: Int) {
         //Toast.makeText(this, List[pos].title + " clicked", Toast.LENGTH_SHORT).show()
-        openHeroActivity(List[pos].title)
+        openHeroActivity(List[position].title)
     }
 
     private fun generateList(): List<CardItem> {

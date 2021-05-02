@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.roleactivity.*
 
 class RoleActivity : AppCompatActivity(), Adapter.OnItemClickListener
 {
@@ -16,17 +16,17 @@ class RoleActivity : AppCompatActivity(), Adapter.OnItemClickListener
         super.onCreate(savedInstanceState)
         setContentView(R.layout.roleactivity)
 
-        //val name: String? = intent.getStringExtra("key")
-        //List = generateList(name.toString())
+        val name: String? = intent.getStringExtra("key")
+        List = generateList(name.toString())
 
         recycler_view.adapter = Adapter(List, this)
         recycler_view.layoutManager = LinearLayoutManager(this)
         recycler_view.setHasFixedSize(true)
     }
 
-    override fun onItemClick(pos: Int) {
-        Toast.makeText(this, List[pos].title + " clicked", Toast.LENGTH_SHORT).show()
-        openHeroActivity(List[pos].title)
+    override fun onItemClick(position: Int) {
+        Toast.makeText(this, List[position].title + " clicked", Toast.LENGTH_SHORT).show()
+        openHeroActivity(List[position].title)
     }
 
     private fun generateList( name : String): List<CardItem> {

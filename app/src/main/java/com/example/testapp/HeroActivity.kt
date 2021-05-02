@@ -22,16 +22,10 @@ class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
 
         generateExpandable(name.toString())
         ExpandableView.setAdapter(ExpandableListAdapter(this, ExpandableView, header, headerImages, body))
-
-        //val List = generateAbilitiesList(name.toString())
-
-        //recycler_view.adapter = Adapter(List, this)
-        //recycler_view.layoutManager = LinearLayoutManager(this)
-        //recycler_view.setHasFixedSize(true)
     }
 
-    override fun onItemClick(pos: Int) {
-        Toast.makeText(this, "Item at $pos clicked", Toast.LENGTH_SHORT).show()
+    override fun onItemClick(position: Int) {
+        Toast.makeText(this, "Item at $position clicked", Toast.LENGTH_SHORT).show()
         TODO("toggle view expand")
     }
 

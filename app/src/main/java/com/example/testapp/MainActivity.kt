@@ -9,65 +9,35 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
 
-    val TankList = generateTanksList()
+    val List = generateList()
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recycler_view.adapter = Adapter(TankList, this)
+        recycler_view.adapter = Adapter(List, this)
         recycler_view.layoutManager = LinearLayoutManager(this)
         recycler_view.setHasFixedSize(true)
     }
 
     override fun onItemClick(pos: Int) {
-        Toast.makeText(this, TankList[pos].title + " clicked", Toast.LENGTH_SHORT).show()
-        openHeroActivity(TankList[pos].title)
+        //Toast.makeText(this, List[pos].title + " clicked", Toast.LENGTH_SHORT).show()
+        openHeroActivity(List[pos].title)
     }
 
-    private fun generateTanksList(): List<CardItem> {
+    private fun generateList(): List<CardItem> {
         val list = ArrayList<CardItem>()
 
-        list += CardItem(R.drawable.dva, "D.Va")
-        list += CardItem(R.drawable.orisa, "Orisa")
-        list += CardItem(R.drawable.reinhardt, "Reinhardt")
-        list += CardItem(R.drawable.roadhog, "Roadhog")
-        list += CardItem(R.drawable.sigma, "Sigma")
-        list += CardItem(R.drawable.winston, "Winston")
-        list += CardItem(R.drawable.ball, "Wrecking Ball")
-
-        list += CardItem(R.drawable.ashe, "Ashe")
-        list += CardItem(R.drawable.bastion, "Bastion")
-        list += CardItem(R.drawable.doomfist, "Doomfist")
-        list += CardItem(R.drawable.echo, "Echo")
-        list += CardItem(R.drawable.genji, "Genji")
-        list += CardItem(R.drawable.hanzo, "Hanzo")
-        list += CardItem(R.drawable.junkrat, "Junkrat")
-        list += CardItem(R.drawable.mccree, "McCree")
-        list += CardItem(R.drawable.mei, "Mei")
-        list += CardItem(R.drawable.pharah, "Pharah")
-        list += CardItem(R.drawable.reaper, "Reaper")
-        list += CardItem(R.drawable.soldier76, "Soldier: 76")
-        list += CardItem(R.drawable.sombra, "Sombra")
-        list += CardItem(R.drawable.symmetra, "Symmetra")
-        list += CardItem(R.drawable.torbjorn, "Torbjorn")
-        list += CardItem(R.drawable.tracer, "Tracer")
-        list += CardItem(R.drawable.widowmaker, "Widowmaker")
-
-        list += CardItem(R.drawable.ana, "Ana")
-        list += CardItem(R.drawable.baptiste, "Baptiste")
-        list += CardItem(R.drawable.brigitte, "Brigitte")
-        list += CardItem(R.drawable.lucio, "Lucio")
-        list += CardItem(R.drawable.mercy, "Mercy")
-        list += CardItem(R.drawable.moira, "Moira")
-        list += CardItem(R.drawable.zenyatta, "Zenyatta")
+        list += CardItem(R.drawable.nav_tank, "Tank")
+        list += CardItem(R.drawable.nav_damage, "Damage")
+        list += CardItem(R.drawable.nav_support, "Support")
 
         return list
     }
 
     private fun openHeroActivity(name: String) {
-        val intent = Intent(this, HeroActivity()::class.java)
+        val intent = Intent(this, RoleActivity()::class.java)
         intent.putExtra("key", name)
         startActivity(intent)
     }

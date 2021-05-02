@@ -9,14 +9,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class RoleActivity : AppCompatActivity(), Adapter.OnItemClickListener
 {
-    val List = generateList()
-
-    val name: String? = intent.getStringExtra("key")
+    var List = generateList("Tank")
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.roleactivity)
+
+        //val name: String? = intent.getStringExtra("key")
+        //List = generateList(name.toString())
 
         recycler_view.adapter = Adapter(List, this)
         recycler_view.layoutManager = LinearLayoutManager(this)
@@ -28,7 +29,7 @@ class RoleActivity : AppCompatActivity(), Adapter.OnItemClickListener
         openHeroActivity(List[pos].title)
     }
 
-    private fun generateList(): List<CardItem> {
+    private fun generateList( name : String): List<CardItem> {
         val list = ArrayList<CardItem>()
         when (name) {
             "Tank" -> {

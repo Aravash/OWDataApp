@@ -9,7 +9,6 @@ import kotlinx.android.synthetic.main.heroactivity.*
 
 class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
 {
-    //val name: String? = intent.getStringExtra("key")
     val header : MutableList<String> = ArrayList()
     val headerImages : MutableList<Int> = ArrayList()
     val body : MutableList<MutableList<String>> = ArrayList()
@@ -38,7 +37,7 @@ class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
 
     private fun generateExpandable( name : String)
     {
-
+/*
         when (name) {
             "Baptiste"->
             {
@@ -781,7 +780,7 @@ class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
             else ->
             {
             }
-        }
+        }*/
     }
 
     private fun createListElement( elementName: String, drawable: Int, list: MutableList<String>)
@@ -789,54 +788,5 @@ class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
         header.add(elementName)
         headerImages.add(drawable)
         body.add(list)
-    }
-
-    private fun generateAbilitiesList(name : String): List<CardItem>
-    {
-        val list = ArrayList<CardItem>()
-
-        /*list += CardItem(R.drawable.baptiste, "Baptiste")
-        list += CardItem(R.drawable.bap_bioticlauncher, "Biotic Launcher")
-        list += CardItem(R.drawable.bap_regenerativeburst, "Regenerative Burst")
-        list += CardItem(R.drawable.bap_immortalityfield, "Immortality Field")
-        list += CardItem(R.drawable.bap_amplificationmatrix, "Amplification Matrix")
-        list += CardItem(R.drawable.bap_exoboots, "Exo-Boots")*/
-
-
-        when (name) {
-            "Baptiste"->
-            {
-                list += CardItem(R.drawable.baptiste, "Baptiste")
-                list += CardItem(R.drawable.bap_bioticlauncher, "Biotic Launcher")
-                list += CardItem(R.drawable.bap_regenerativeburst, "Regenerative Burst")
-                list += CardItem(R.drawable.bap_immortalityfield, "Immortality Field")
-                list += CardItem(R.drawable.bap_amplificationmatrix, "Amplification Matrix")
-                list += CardItem(R.drawable.bap_exoboots, "Exo-Boots")
-            }
-
-
-            "Ana" ->
-            {
-                list += CardItem(R.drawable.ana, "Ana")
-                list += CardItem(R.drawable.ana_bioticrifle, "Biotic Rifle")
-                list += CardItem(R.drawable.ana_sleepdart, "Sleep Dart")
-                list += CardItem(R.drawable.ana_bioticgrenade, "Biotic Grenade")
-                list += CardItem(R.drawable.ana_nanoboost, "NanoBoost")
-            }
-
-            else ->
-            {
-                list += CardItem(R.drawable.dva, "D.Va")
-                list += CardItem(R.drawable.orisa, "Orisa")
-                list += CardItem(R.drawable.reinhardt, "Reinhardt")
-                list += CardItem(R.drawable.roadhog, "Roadhog")
-                list += CardItem(R.drawable.sigma, "Sigma")
-                list += CardItem(R.drawable.winston, "Winston")
-                list += CardItem(R.drawable.ball, "Wrecking Ball")
-                list += CardItem(R.drawable.zarya, "Zarya")
-            }
-        }
-        return list
-
     }
 }

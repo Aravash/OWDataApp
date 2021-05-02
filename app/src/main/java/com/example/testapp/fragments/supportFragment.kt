@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.testapp.Adapter
 import com.example.testapp.CardItem
 import com.example.testapp.R
@@ -22,7 +23,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [supportFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class supportFragment : Fragment(){
+class supportFragment : Fragment(), Adapter.OnItemClickListener{
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -42,12 +43,15 @@ class supportFragment : Fragment(){
         savedInstanceState: Bundle?
     ): View? {
 
-        support_recycler.adapter = Adapter(List, requireContext())
-        support_recycler.layoutManager = LinearLayoutManager(this.context)
-        support_recycler.setHasFixedSize(true)
+        val inflate = inflater.inflate(R.layout.fragment_tank, container, false)
+        val tank_recycler: RecyclerView = inflate.findViewById(R.id.tank_recycler)
+
+        tank_recycler.adapter = Adapter(List, this)
+        tank_recycler.layoutManager = LinearLayoutManager(requireContext())
+        tank_recycler.setHasFixedSize(true)
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_support, container, false)
+        return inflate
     }
 
     private fun generateList(): List<CardItem> {
@@ -82,5 +86,9 @@ class supportFragment : Fragment(){
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onItemClick(position: Int) {
+        TODO("Not yet implemented")
     }
 }

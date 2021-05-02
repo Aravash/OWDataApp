@@ -1,26 +1,23 @@
 package com.example.testapp
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testapp.fragments.damageFragment
+import com.example.testapp.fragments.heroDetailFragment
 import com.example.testapp.fragments.supportFragment
 import com.example.testapp.fragments.tankFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
+class MainActivity : AppCompatActivity() {
 
     //val TankList = generateTanksList()
 
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val tankFrag = tankFragment()
+        val tankFrag = heroDetailFragment()
         val damageFrag = damageFragment()
         val supportFrag = supportFragment()
 
@@ -28,7 +25,7 @@ class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
 
         bottom_navigation.setOnNavigationItemSelectedListener()
         {
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.ic_tanks -> makeFragmentCurrent(tankFrag)
                 R.id.ic_damage -> makeFragmentCurrent(damageFrag)
                 R.id.ic_supports -> makeFragmentCurrent(supportFrag)
@@ -36,20 +33,34 @@ class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
             true
         }
 
-        /*recycler_view.adapter = Adapter(TankList, this)
-        recycler_view.layoutManager = LinearLayoutManager(this)
-        recycler_view.setHasFixedSize(true)*/
+        //recycler_view.adapter = Adapter(TankList, this)
+        // recycler_view.layoutManager = LinearLayoutManager(this)
+        // recycler_view.setHasFixedSize(true)*/
     }
 
-    private fun makeFragmentCurrent(fragment: Fragment) =
-        supportFragmentManager.beginTransaction().apply{
-            replace(R.id.fl_wrapper, fragment)
-            commit()
-        }
+    public fun makeFragmentCurrent(fragment: Fragment) =
+            supportFragmentManager.beginTransaction().apply {
 
+                val b = Bundle()
+                b.putString("message", "D.Va")
+                fragment.arguments = b
+                replace(R.id.fl_wrapper, fragment)
+                commit()
+            }
+
+    public fun makeHeroViewActivity(fragment: Fragment, title: String) =
+            supportFragmentManager.beginTransaction().apply {
+                val b = Bundle()
+                b.putString("message", "D.Va")
+                fragment.arguments = b
+                replace(R.id.fl_wrapper, fragment)
+                commit()
+            }
+}
+/*
     override fun onItemClick(pos: Int) {
-        /*Toast.makeText(this, TankList[pos].title + " clicked", Toast.LENGTH_SHORT).show()
-        openHeroActivity(TankList[pos].title)*/
+        Toast.makeText(this, TankList[pos].title + " clicked", Toast.LENGTH_SHORT).show()
+        openHeroActivity(TankList[pos].title)
     }
 
     private fun generateTanksList(): List<CardItem> {
@@ -92,10 +103,11 @@ class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
         return list
     }
 
+
     private fun openHeroActivity(name: String) {
         val intent = Intent(this, HeroActivity()::class.java)
         intent.putExtra("key", name)
         startActivity(intent)
     }
-}
+}*/
 

@@ -1,15 +1,16 @@
 package com.example.testapp.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.testapp.Adapter
 import com.example.testapp.CardItem
+import com.example.testapp.MainActivity
 import com.example.testapp.R
-import kotlinx.android.synthetic.main.fragment_tank.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,12 +22,13 @@ private const val ARG_PARAM2 = "param2"
  * Use the [tankFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class tankFragment : Fragment() {
+class tankFragment : Fragment(), Adapter.OnItemClickListener {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
     val List = generateList()
+    val detailFrag = heroDetailFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,13 +40,15 @@ class tankFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+        val inflate = inflater.inflate(R.layout.fragment_tank, container, false)
+        val tank_recycler: RecyclerView = inflate.findViewById(R.id.tank_recycler)
 
-     //   tank_recycler.adapter = Adapter(List,this)
-     //   tank_recycler.layoutManager = LinearLayoutManager(requireContext())
-     //   tank_recycler.setHasFixedSize(true)
+        tank_recycler.adapter = Adapter(List, this)
+        tank_recycler.layoutManager = LinearLayoutManager(requireContext())
+        tank_recycler.setHasFixedSize(true)
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tank, container, false)
+        return inflate
 
     }
 
@@ -80,5 +84,9 @@ class tankFragment : Fragment() {
                         putString(ARG_PARAM2, param2)
                     }
                 }
+    }
+
+    override fun onItemClick(position: Int) {
+        (activity as MainActivity?)?.makeHeroViewFragment(detailFrag, List[position].title)
     }
 }

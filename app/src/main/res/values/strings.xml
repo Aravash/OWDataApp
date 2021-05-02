@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">TestApp</string>
-    <color name="OWWhite">#FFFFFFFF</color>
-    <color name="OWOrange">#fa9c1d</color>
-    <color name="OWGrey">#4a4c4e</color>
 
     <string name="Bap_Nationality"><b>Nationality:</b> Haitian</string>
     <string name="Bap_Health"><b>Health:</b> 200</string>

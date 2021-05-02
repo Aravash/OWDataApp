@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dva_Nationality"><b>Nationality:</b> South Korean</string>
+    <string name="dva_Health"><b>Health:</b> 300</string>
+    <string name="dva_Armour"><b>Armour:</b> 300</string>
+    <string name="dva_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="dva_gun"><b>Fusion Cannons</b></string>
+    <string name="dva_gun_detail"><b>Twin rotating cannons that slows movement while in use. Does not need to reload</b></string>
+    <string name="dva_gun_type"><b>Weapon Type: Hitscan</b></string>
+    <string name="dva_gun_Damage"><b>Damage: 0.6-2 per pellet</b></string>
+    <string name="dva_gun_Falloff">Falloff: Begins at 10 metres, max falloff at 20</string>
+    <string name="dva_gun_Spread"><b>Spread Angle: shots spread 4.15 degrees from centre</b></string>
+    <string name="dva_gun_pellets"><b>Pellets: 11 pellets per shot</b></string>
+    <string name="dva_gun_movespeed"><b>Move Speed: -40% movement penalty while shooting, except while using Boosters</b></string>
+    <string name="dva_gun_ROF"><b>Rate of Fire: 1 burst every 0.15 seconds</b></string>
+    <string name="dva_gun_can_headshot"><b>Can headshot: Yes</b></string>
+
+    <string name="dva_defense_matrix"><b>Defense Matrix</b></string>
+    <string name="dva_defense_matrix_detail"><b>Forward facing cone which destroys all enemy bullets and projectiles that enter it. Cannot fire Fusion Cannons while in use</b></string>
+    <string name="dva_defense_matrix_range"><b>Max Range: 10 metres</b></string>
+    <string name="dva_defense_matrix_duration"><b>Duration: using all resource lasts 2 seconds</b></string>
+    <string name="dva_defense_matrix_recharge_rate"><b>Recharge Rate: 16% resource per second after not in use for 0.75 seconds</b></string>
+    <string name="dva_defense_matrix_cooldown">Cooldown: 1 second</string>
+
+    <string name="dva_boosters"><b>Boosters</b></string>
+    <string name="dva_boosters_detail"><b>Fly forwards in the direction you are facing for the duration</b></string>
+    <string name="dva_boosters_damage"><b>Damage: deals 10 damage to targets flown into</b></string>
+    <string name="dva_boosters_movespeed"><b>Move Speed: +118% bonus to movespeed, or 12 metres/s</b></string>
+    <string name="dva_boosters_duration"><b>Duration: 2 seconds, cancellable by pressing again</b></string>
+    <string name="dva_boosters_cooldown"><b>Cooldown: 4 seconds</b></string>
+
+    <string name="dva_micro_missiles"><b>Micro Missiles</b></string>
+    <string name="dva_micro_missiles_detail"><b>short volley of explosive rockets</b></string>
+    <string name="dva_micro_missiles_damage"><b>Damage: 7 direct, 1-4 splash damage</b></string>
+    <string name="dva_micro_missiles_projectile_speed"><b>Projectile Speed: 40 metres/s</b></string>
+    <string name="dva_micro_missiles_AOE"><b>Explosion Radius: 1.5 metres</b></string>
+    <string name="dva_micro_missiles_ROF"><b>Rate of Fire: 11 missiles/s</b></string>
+    <string name="dva_micro_missiles_Cooldown"><b>Cooldown: 8 seconds</b></string>
+
+    <string name="dva_ultimate"><b>Self-Destruct</b></string>
+    <string name="dva_ultimate_detail"><b>D.Va ejects from her MEKA and it explodes after a delay. If boosting, the MEKA continues boosting even when ejected</b></string>
+    <string name="dva_ultimate_cost"><b>Cost: 1540 points</b></string>
+    <string name="dva_ultimate_damage"><b>Damage: 100-1000</b></string>
+    <string name="dva_ultimate_radius"><b>Explosion Radius: 20 metres</b></string>
+    <string name="dva_ultimate_cast_time"><b>Cast Time: 3 seconds before detonation</b></string>
+
+    <string name="dva_demeched"><b>Eject!</b></string>
+    <string name="dva_demeched_detail"><b>When D.VAs MEKA is destroyed, she ejects from it and continues fighting</b></string>
+    <string name="dva_demeched_exit_time">MEKA exit time: 1.5 seconds</string>
+    <string name="dva_demeched_Health"><b>Health:</b> 150</string>
+    <string name="dva_demeched_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="dva_gun2"><b>Light Gun</b></string>
+    <string name="dva_gun2_detail"><b>Automatic Projectile Blaster</b></string>
+    <string name="dva_gun2_type"><b>Weapon Type: Projectile</b></string>
+    <string name="dva_gun2_damage"><b>Damage: 14</b></string>
+    <string name="dva_gun2_projectile_speed"><b>Projectile Speed: 50 metres/s</b></string>
+    <string name="dva_gun2_ROF"><b>Rate of Fire: 7 rounds/s</b></string>
+    <string name="dva_gun2_ammo"><b>Clip Size: 20</b></string>
+    <string name="dva_gun2_reloadspeed"><b>Reload Speed: 1.45 seconds</b></string>
+    <string name="dva_gun2_canheadshot"><b>Can Headshot: Yes</b></string>
+
+    <string name="dva_ultimate2"><b>Call Mech</b></string>
+    <string name="dva_ultimate2_detail"><b>D.Va calls a new MEKA down and enters it. Instantly charges after Self-Destruct detonates, or if D.VA is Resurrected</b></string>
+    <string name="dva_ultimate2_cost"><b>Cost: 319 points</b></string>
+    <string name="dva_ultimate2_damage"><b>Damage: the MEKA deals 250 damage to nearby targets when it lands</b></string>
+    <string name="dva_ultimate2_cast_time"><b>Cast Time: 2 seconds</b></string>
+
+    <string name="orisa_Nationality"><b>Creator:</b> Efi Oladele</string>
+    <string name="orisa_Health"><b>Health:</b> 200</string>
+    <string name="orisa_Armour"><b>Armour:</b> 250</string>
+    <string name="orisa_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="orisa_gun"><b>Fusion Driver</b></string>
+    <string name="orisa_gun_detail"><b>Automatic projectile weapon that deals high damage but slows movement while in use</b></string>
+    <string name="orisa_gun_type"><b>Weapon Type: Projectile</b></string>
+    <string name="orisa_gun_Damage"><b>Damage: 11</b></string>
+    <string name="orisa_gun_spread_angle"><b>Spread Angle: shots spread 4.15 degrees from centre</b></string>
+    <string name="orisa_gun_movespeed"><b>Move Speed: -30% penalty</b></string>
+    <string name="orisa_gun_ROF"><b>Rate of Fire: 12 rounds/s</b></string>
+    <string name="orisa_gun_ammo"><b>Clip Size: 150</b></string>
+    <string name="orisa_gun_reloadspeed"><b>Reload Speed: 2.55 seconds</b></string>
+    <string name="orisa_gun_canheadshot"><b>Can Headshot: Yes</b></string>
+
+    <string name="orisa_halt"><b>Halt!</b></string>
+    <string name="orisa_halt_detail"><b>Travelling charge that when detonated(by choice or on contact with a surface) pulls nearby enemies to its origin</b></string>
+    <string name="orisa_halt_type"><b>Type: Projectile</b></string>
+    <string name="orisa_halt_speed"><b>Projectile Speed: 25 metres/s</b></string>
+    <string name="orisa_halt_radius"><b>Radius: 5 metres</b></string>
+    <string name="orisa_halt_duration"><b>Duration: holds targets for 0.65 second</b></string>
+    <string name="orisa_halt_"><b>Cooldown: 6 seconds</b></string>
+
+    <string name="orisa_fortify"><b>Fortify</b></string>
+    <string name="orisa_fortify_detail"><b>Orisa temporarily becomes immune to being moved or stunned by enemies, takes reduced damage, and cannot be headshot</b></string>
+    <string name="orisa_fortify_reduction"><b>Reduction: 40%</b></string>
+    <string name="orisa_fortify_duration"><b>Duration: 4 seconds</b></string>
+    <string name="orisa_fortify_cooldown"><b>Cooldown: 10 seconds</b></string>
+
+
+    <string name="orisa_barrier"><b>Protective Barrier</b></string>
+    <string name="orisa_barrier_detail"><b>Curved Stationary Barrier</b></string>
+
+    <string name="orisa_ultimate"><b>Supercharger</b></string>
+    <string name="orisa_ultimate_detail"><b>Deployed device that increase damage of all allies within line of sight of it.</b></string>
+
+
+    <string name="reinhardt_Nationality"><b>Nationality:</b> German</string>
+    <string name="reinhardt_Health"><b>Health:</b> 300</string>
+    <string name="reinhardt_Armour"><b>Armour:</b> 200</string>
+    <string name="reinhardt_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="reinhardt_gun"><b>Rocket Hammer</b></string>
+    <string name="reinhardt_gun_detail"><b>Melee weapon with high damage and sweeping range</b></string>
+
+    <string name="reinhardt_shield"><b>Barrier Field</b></string>
+    <string name="reinhardt_shield_detail"><b>Large shield in front of Reinhardt. Cannot attack or use abilities while in use</b></string>
+
+    <string name="reinhardt_charge"><b>Charge</b></string>
+    <string name="reinhardt_charge_detail"><b>Reinhardt charges forward, potentially pinning enemies he comes in contact with, and dealing massive damage if he charges them into a wall</b></string>
+
+    <string name="reinhardt_firestrike"><b>Fire Strike</b></string>
+    <string name="reinhardt_firestrike_detail"><b>Piercing Projectile</b></string>
+
+    <string name="reinhardt_ultimate"><b>Earthshatter</b></string>
+    <string name="reinhardt_ultimate_detail"><b>Cone extending from reinhardt that stuns enemies on the ground in its affecting range </b></string>
+
+    <string name="reinhardt_passive"><b>Steadfast</b></string>
+    <string name="reinhardt_passive_detail"><b>Reinhardt is displaced less by abilities that knockback</b></string>
+
+    <string name="roadhog_Nationality"><b>Nationality:</b> Australian</string>
+    <string name="roadhog_Health"><b>Health:</b> 600</string>
+    <string name="roadhog_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="roadhog_gun"><b>Scrap Gun</b></string>
+    <string name="roadhog_gun_detail"><b>Projectile shotgun with a ranged alternate fire</b></string>
+
+    <string name="roadhog_takeabreather"><b>Take a Breather</b></string>
+    <string name="roadhog_takeabreather_detail"><b>Roadhog heals himself and reduces damage he takes for the duration</b></string>
+
+    <string name="roadhog_hook"><b>Chain Hook</b></string>
+    <string name="roadhog_hook_detail"><b>Roadhog throws a hook a distance forward, if it hits an enemy, it pulls them into him</b></string>
+
+    <string name="roadhog_ultimate"><b>Whole Hog</b></string>
+    <string name="roadhog_ultimate_detail"><b>High Knockback continuous fire</b></string>
+
+    <string name="sigma_Nationality"><b>Nationality:</b> Dutch</string>
+    <string name="sigma_Health"><b>Health:</b> 300</string>
+    <string name="sigma_Shields"><b>Shields:</b> 100</string>
+    <string name="sigma_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="sigma_gun"><b>Hyperspheres</b></string>
+    <string name="sigma_gun_detail"><b>Dual fire explosives that ricochet off surfaces</b></string>
+
+    <string name="sigma_barrier"><b>Experimental Barrier</b></string>
+    <string name="sigma_barrier_detail"><b>floating barrier travels forward. travelling can be stopped at any time by releasing the button</b></string>
+
+    <string name="sigma_grasp"><b>Kinetic Grasp</b></string>
+    <string name="sigma_grasp_detail"><b>Destroys bullets and projectiles directly in front of sigma, and gains shields based on damage blocked after the duration</b></string>
+
+    <string name="sigma_accretion"><b>Accretion</b></string>
+    <string name="sigma_accretion_detail"><b>After a short cast, fires an arcing projectile that explode,s stuns, and knocks back on impact</b></string>
+
+    <string name="sigma_ultimate"><b>Gravitic Flux</b></string>
+    <string name="sigma_ultimate_detail"><b>Sigma gains the ability to fly, lifts enemies in a targeted area, and pulls them back down to the ground</b></string>
+
+    <string name="winston_Nationality"><b>Nationality:</b> Moon</string>
+    <string name="winston_Health"><b>Health:</b> 350</string>
+    <string name="winston_Armour"><b>Armour:</b> 150</string>
+    <string name="winston_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="winston_gun"><b>Tesla Cannon</b></string>
+    <string name="winston_gun_detail"><b>Close Range gun that damages all targets in range simultaneously</b></string>
+
+    <string name="winston_jumppack"><b>Jump Pack</b></string>
+    <string name="winston_jumppack_detail"><b>Winston lunges forward, dealing contact damage when he lands</b></string>
+
+    <string name="winston_barrier"><b>Barrier Projector</b></string>
+    <string name="winston_barrier_detail"><b>Spherical dome shield</b></string>
+
+    <string name="winston_ultimate"><b>Primal Rage</b></string>
+    <string name="winston_ultimate_detail"><b>Winstons health doubles, his jump pack cooldown is reduced, and is restricted to high knockback melee attacks</b></string>
+
+    <string name="ball_Nationality"><b>Nationality:</b> Moon</string>
+    <string name="ball_Health"><b>Health:</b> 500</string>
+    <string name="ball_Armour"><b>Armour:</b> 100</string>
+    <string name="ball_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="ball_gun"><b>Quad Cannons</b></string>
+    <string name="ball_gun_detail"><b>Automatic weapons that reloads in ball form</b></string>
+
+    <string name="ball_claw"><b>Grappling Claw</b></string>
+    <string name="ball_claw_detail"><b>A grappling claw latches onto a wall or ceiling, and Wrecking Ball can swing from it, dealing damage at a high enough speed</b></string>
+
+    <string name="ball_roll"><b>Roll</b></string>
+    <string name="ball_roll_detail"><b>Wrecking ball transforms into a ball, hiding his head and increasing movespeed</b></string>
+
+    <string name="ball_shield"><b>Adaptive Shields</b></string>
+    <string name="ball_shield_detail"><b>Wrecking Ball gains temporary shields, gaining more based on the number of nearby enemies</b></string>
+
+    <string name="ball_piledriver"><b>Piledriver</b></string>
+    <string name="ball_piledriver_detail"><b>Wrecking Balls slams into the ground from a height, damaging and knocking enemies upward</b></string>
+
+    <string name="ball_ultimate"><b>Minefield</b></string>
+    <string name="ball_ultimate_detail"><b>Deployed field of static explosives, which detonate on contact with an enemy.</b></string>
+
+    <string name="zarya_Nationality"><b>Nationality:</b> Russian</string>
+    <string name="zarya_Health"><b>Health:</b> 200</string>
+    <string name="zarya_Shields"><b>Shields:</b> 200</string>
+    <string name="zarya_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="zarya_gun"><b>Particle Cannon</b></string>
+    <string name="zarya_gun_detail"><b>Beam weapon with explosive alternate fire. Damage scales with Energy</b></string>
+
+    <string name="zarya_barrier"><b>Particle Barrier</b></string>
+    <string name="zarya_barrier_detail"><b>Personal Barrier, damage dealt to it increases energy</b></string>
+
+    <string name="zarya_barrier_projected"><b>Projected Barrier</b></string>
+    <string name="zarya_barrier_projected_detail"><b>Projected Barrier that surrounds allies, damage dealt to it increases energy</b></string>
+
+    <string name="zarya_ultimate"><b>Graviton Surge</b></string>
+    <string name="zarya_ultimate_detail"><b>Projectile that, on collision, creates a gravity well, which pulls enemies in</b></string>
+
+    <string name="zarya_passive"><b>Energy</b></string>
+    <string name="zarya_passive_detail"><b>Particle Cannon deals more damage based on energy count.</b></string>
+
+
+</resources>

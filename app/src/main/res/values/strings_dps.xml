@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Ashe_Nationality"><b>Nationality:</b> American</string>
+    <string name="Ashe_Health"><b>Health:</b> 200</string>
+    <string name="Ashe_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="bastion_Nationality"><b>Nationality:</b> SST Laboratories</string>
+    <string name="bastion_Health"><b>Health:</b> 200</string>
+    <string name="bastion_Armour"><b>Armour:</b> 100</string>
+    <string name="bastion_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="doomfist_Nationality"><b>Nationality:</b> Nigerian</string>
+    <string name="doomfist_Health"><b>Health:</b> 250</string>
+    <string name="doomfist_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="echo_Nationality"><b>Creator:</b> Mina Liao</string>
+    <string name="echo_Health"><b>Health:</b> 200</string>
+    <string name="echo_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="genji_Nationality"><b>Nationality:</b> Japanese</string>
+    <string name="genji_Health"><b>Health:</b> 200</string>
+    <string name="genji_MoveSpeed"><b>Movespeed</b> 6 Metres/s</string>
+
+    <string name="hanzo_Nationality"><b>Nationality:</b> Japanese</string>
+    <string name="hanzo_Health"><b>Health:</b> 200</string>
+    <string name="hanzo_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="junkrat_Nationality"><b>Nationality:</b> Australian</string>
+    <string name="junkrat_Health"><b>Health:</b> 200</string>
+    <string name="junkrat_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="mccree_Nationality"><b>Nationality:</b> American</string>
+    <string name="mccree_Health"><b>Health:</b> 225</string>
+    <string name="mccree_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="mei_Nationality"><b>Nationality:</b> Chinese</string>
+    <string name="mei_Health"><b>Health:</b> 250</string>
+    <string name="mei_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="pharah_Nationality"><b>Nationality:</b> Egyptian</string>
+    <string name="pharah_Health"><b>Health:</b> 200</string>
+    <string name="pharah_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="reaper_Nationality"><b>Nationality:</b> American</string>
+    <string name="reaper_Health"><b>Health:</b> 250</string>
+    <string name="reaper_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="soldier76_Nationality"><b>Nationality:</b> American</string>
+    <string name="soldier76_Health"><b>Health:</b> 200</string>
+    <string name="soldier76_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="sombra_Nationality"><b>Nationality:</b> Mexican</string>
+    <string name="sombra_Health"><b>Health:</b> 200</string>
+    <string name="sombra_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="torb_Nationality"><b>Nationality:</b> Swedish</string>
+    <string name="torb_Health"><b>Health:</b> 200</string>
+    <string name="torb_Armour"><b>Armour:</b> 50</string>
+    <string name="torb_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="tracer_Nationality"><b>Nationality:</b> British</string>
+    <string name="tracer_Health"><b>Health:</b> 150</string>
+    <string name="tracer_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+    <string name="widowmaker_Nationality"><b>Nationality:</b> French</string>
+    <string name="widowmaker_Health"><b>Health:</b> 175</string>
+    <string name="widowmaker_MoveSpeed"><b>Movespeed</b> 5.5 Metres/s</string>
+
+</resources>

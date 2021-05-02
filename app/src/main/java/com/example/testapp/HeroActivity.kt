@@ -31,7 +31,6 @@ class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
 
     private fun generateExpandable( name : String)
     {
-/*
         when (name) {
             "Baptiste"->
             {
@@ -126,7 +125,6 @@ class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
             list3.add(getString(R.string.Ana_Ability1_Speed))
             list3.add(getString(R.string.Ana_Ability1_Damage))
             list3.add(getString(R.string.Ana_Ability1_CastTime))
-            list3.add(getString(R.string.Ana_Ability1_Healing))
             list3.add(getString(R.string.Ana_Ability1_Duration))
             list3.add(getString(R.string.Ana_Ability1_AOE))
             list3.add(getString(R.string.Ana_Ability1_Cooldown))
@@ -774,7 +772,7 @@ class HeroActivity : AppCompatActivity(), Adapter.OnItemClickListener
             else ->
             {
             }
-        }*/
+        }
     }
 
     private fun createListElement( elementName: String, drawable: Int, list: MutableList<String>)

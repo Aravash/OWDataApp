@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
     }
 
     private fun openHeroActivity(name: String) {
-        val intent = Intent(this, RoleActivity()::class.java)
-        intent.putExtra("key", name)
+        val intent = Intent(this, HeroActivity()::class.java)
+        intent.putExtra("key", "D.Va")
         startActivity(intent)
     }
 }

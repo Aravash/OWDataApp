@@ -11,6 +11,7 @@
     <color name="OWWhite">#F1F1F1</color>
     <color name="OWOrange">#fa9c1d</color>
     <color name="OWGrey">#4a4c4e</color>
+    <color name="OWGreyer">#3d3d3d</color>
     <color name="BlueGray">#5899e2</color>
     <color name="MaximumBluePurple">#9191e9</color>
 </resources>

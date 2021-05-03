@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity(), Adapter.OnItemClickListener {
     }
 
     override fun onItemClick(position: Int) {
-        //Toast.makeText(this, List[pos].title + " clicked", Toast.LENGTH_SHORT).show()
         openHeroActivity(List[position].title)
     }
 
